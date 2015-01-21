@@ -13,4 +13,4 @@ Open Science Grid
 
 
 
-# NOTE: in all the scripts I have omitted the account number that needs to be charged , .... well, ... for obvious reasons :) ... it would not be wise to put that on github.  Remember to add that option to the scripts or in the command line using the account for your personal allocation, or my Campus Champion allocation if you are still in the training phase.
+NOTE: in all the scripts I have omitted the account number that needs to be charged , .... well, ... for obvious reasons :) ... it would not be wise to put that on github.  Remember to add that option to the scripts or in the command line using the account for your personal allocation, or my Campus Champion allocation if you are still in the training phase.
