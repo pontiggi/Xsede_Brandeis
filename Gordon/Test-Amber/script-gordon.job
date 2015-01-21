@@ -1,0 +1,33 @@
+#!/bin/bash
+# the queue to be used
+#PBS -q normal
+# INSERT HERE YOUR PROJECT ALLOCATION
+#PBS -A 
+# number of nodes and number of processors per node requested
+#PBS -l nodes=1:ppn=16:native
+# requested Wall-clock time.
+#PBS -l walltime=00:30:00
+# name of the standard out file to be "output-file".
+#PBS -o myoutput
+#PBS -e myerror
+# name of the job
+#PBS -N example
+#PBS -V
+
+cd /oasis/scratch/$USER/$PBS_JOBID
+cp /home/$USER/Xsede_Brandeis/Gordon/Test-Amber/* .
+
+module purge
+module load gnubase
+module load intel
+module load mvapich2_ib/1.9
+module load fftw/3.3.3
+module load amber
+
+### this is just a simple example running sander.MPI 
+
+echo "start running " 
+mpirun -np 16 `which sander.MPI` -O -i run.in -o run.out -p prmtop -c start.rst -r run.rst -x run.mdcrd -inf run.info
+echo "run finished " 
+
+
