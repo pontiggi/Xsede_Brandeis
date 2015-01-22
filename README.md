@@ -5,11 +5,9 @@ In the folders you can find a couple of example that you can use to submit calcu
 
 Gordon at SDSC
 
+Blacklight at PSC 
 
-Blacklight 
-
-
-Open Science Grid
+Stampede at TACC
 
 
 
