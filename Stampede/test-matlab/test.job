@@ -1,0 +1,21 @@
+#!/bin/bash
+#SBATCH -J testMatlab      
+#SBATCH -o test.o.txt 
+#SBATCH -e test.e.txt 
+#SBATCH -p normal   
+#SBATCH -N 1       
+#SBATCH -n 4
+#SBATCH -t 01:30:00 
+# The next line is required if the user has more than one project
+#SBATCH -A  XXX 
+
+module load matlab/2013a
+
+for i in `seq 0 3`
+do
+cd $i
+./run_my_script_batch.sh  /work/apps/matlab/2013a   > test-stampede_${i}.log 2>&1 &
+cd ../
+done
+
+wait

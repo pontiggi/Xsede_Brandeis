@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#$ -cwd 
+#$ -l doro
+#$ -q doro.q
+
+
+module load MATLAB/R2013a
+
+matlab -nodesktop -nojvm -singleCompThread  <  my_script_batch.m
+
+

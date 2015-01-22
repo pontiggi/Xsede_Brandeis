@@ -1,0 +1,1 @@
+mcc -Y  /share/apps/scisoft/MCC-LICENSE/network.lic -m my_script_batch

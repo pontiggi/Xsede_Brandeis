@@ -1,0 +1,20 @@
+### this will take you to the folder from which the job was submitted
+. /usr/share/modules/init/bash
+cd ${SCRATCH}/test-gaussian
+
+module load gaussian09/d01
+
+###definition for acessing gaussian
+#. ${g09root}/bsd/g09.profile
+
+### define a local scratch folder
+
+export GAUSS_SCRDIR=${PWD}/myscratch
+mkdir -p $GAUSS_SCRDIR
+
+## execute the gaussian calculation
+g09 < ${molecule}.com > ${molecule}.log 2>&1
+
+### I would like to remove the temporary scratch directory, unless it contains data that are useful
+#rm -fr $GAUSS_SCRDIR
+

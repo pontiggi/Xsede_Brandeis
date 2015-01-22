@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH -J OneJobOneNode      
+#SBATCH -o test.o.txt 
+#SBATCH -e test.e.txt 
+#SBATCH -p normal   
+#SBATCH -N 1       
+#SBATCH -n 16     
+#SBATCH -t 01:30:00 
+# The next line is required if the user has more than one project
+#SBATCH -A  XXXX
+
+module load gromacs/5.0.1
+ibrun  `which mdrun_mpi` -s topol.tpr -deffnm test_gromacs > test-gromacs-stampede.log 2>&1

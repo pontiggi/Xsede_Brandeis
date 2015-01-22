@@ -1,0 +1,4 @@
+working folder  $WORK
+remember to add the allocation number to the test.job
+sbatch
+squeue
