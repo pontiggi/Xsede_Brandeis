@@ -2,7 +2,6 @@
 Template submission scripts and short examples for testing some of the Xsede sites
 
 In these folders you can find a couple of example that you can use to submit calculations on the following Xsede Sites:
-
 Gordon at SDSC
 
 Blacklight at PSC 
