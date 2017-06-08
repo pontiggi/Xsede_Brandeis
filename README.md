@@ -1,7 +1,7 @@
 # Xsede_Brandeis
 Template submission scripts and short examples for testing some of the Xsede sites
 
-In the folders you can find a couple of example that you can use to submit calculations on the following Xsede Sites:
+In these folders you can find a couple of example that you can use to submit calculations on the following Xsede Sites:
 
 Gordon at SDSC
 
