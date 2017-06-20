@@ -1,4 +1,5 @@
 # Xsede_Brandeis
+This stuff is old. it needs to be updated
 Template submission scripts and short examples for testing some of the Xsede sites
 
 In these folders you can find a couple of example that you can use to submit calculations on the following Xsede Sites:
